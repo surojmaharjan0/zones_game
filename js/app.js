@@ -8,6 +8,7 @@ const shuffleBtn = document.querySelector('.shuffle');
 const playBtn = document.querySelector('.play');
 const replayBtn = document.querySelector('.replay');
 
+
 const guessUI = document.querySelector('.guess');
 const guessFormUI = document.querySelector('form');
 const guessZoneUI = document.querySelector('.guessedZone');
@@ -72,7 +73,6 @@ const checkGuess = (e) => {
     guessZoneUI.value = '';
     guessZoneUI.disabled = true;
 }
-
 // Event Listeners
 shuffleBtn.addEventListener('click', beginGame);
 guessFormUI.addEventListener('submit', checkGuess);
