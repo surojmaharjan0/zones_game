@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+
+:root {
+    --dark: #2D2E32;
+  }
+
+body{
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Caveat', cursive;
+    color: #fff;;
+    background-color:var(--dark) ;
+}
+.game-title{
+    color:#fff;
+    font-size: 3em;
+}
+.game-title span{
+    color:#F7544C;
+}
+#scoreboard p,.guess  {
+    font-size: 1.7em;
+}
+#scoreboard  p ,.guess span{
+    color:#F7544C;
+    font-size: 1.5em;
+}
+#scoreboard p span{
+    color:#fff;
+}
+.shuffle,.play,.replay{
+    background: white;
+    border:1px solid #ccc;
+    padding:15px;
+    border-radius: 50%;
+    color:var(--dark);
+    box-shadow: 2px 2px 5px #ccc,-2px -2px 5px #ccc;
+}
+input[type=text]{
+    width:80%;
+    padding:8px;
+    border-radius: 5px;
+    font-size:1.4em;
+}
+footer{
+    font-size: 1.2em;
+}
+footer p{
+    padding-top:13px;
+}
+ul li{
+    font-size: 1.5em;
+}
+text-red{
+    color:#F7544C;
+}

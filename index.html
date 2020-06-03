@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+        integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Zone Guesser Game</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center mt-2 pb-3 game-title">Zone Guesser <br> <span><i class="fas fa-gamepad"></i></span>
+        </h1>
+        <hr>
+        <div class="row justify-content-between mt-2">
+            <div class="text-center col-md-5" id="map">
+                <img src="img/zones.png" class="img-responsive" alt="Nepal Map">
+            </div>
+            <div class="col-md-5" id="game">
+                <div id="scoreboard" class="text-center">
+                    <p class="d-inline mr-5 time"><i class="fas fa-stopwatch"></i>: <span>30 s</span></p>
+                    <p class="d-inline score"> <i class="fas fa-trophy"></i> : <span>0</span></p>
+                </div>
+                <div id="game" class="text-center mt-5">
+                    <button class="play mr-3"><i class="fas fa-play fa-2x"></i></button>
+                    <button class="shuffle" hidden><i class="fas fa-random fa-2x"></i></button>
+                    <button class="replay" hidden><i class="fas fa-undo fa-2x"></i></button>
+                    <br> <br>
+                    <p class="guess"><span></span></p>
+                    <form class="mt-3">
+                        <div class="form-group">
+                            <input type="text" class="guessedZone" placeholder="Enter your guess here" disabled>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center mt-5">
+        <a href="guides.html" class="btn btn-outline-danger" target="_blank">How To Play</a>
+        <p>Copyright &copy; Suroj Maharjan 2020</p>
+    </footer>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
